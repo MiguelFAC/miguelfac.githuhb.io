@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"> <!-- Caracteres especiales -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="asesores en mantenimiento de piscinas, contacto de mantenimiento, asesoramiento en mantenimiento de piscinas, redes sociales de mantenimiento de piscinas, numero de telefono, formulario para contactar mantenimiento de piscinas, agendar cita para mantenimiento de piscina">
+	<meta name="description" content="Aquí encontrará distintas maneras por las que podrá contactar a un ejecutivo, para ser ayudado en el proceso de mantenimiento de la piscina lo más pronto posible">
+	<meta name="author" contentcaracteres ="Miguel">
+	<meta name="owner" content="Bob Acuamarino S.A">
+	<meta property="og:title" content="Contactos | Bob Acuamarino"> <!-- 20 y 60 de espacio  -->
+	<meta property="og:description" content="Aquí encontrará distintas maneras por las que podrá contactar a un ejecutivo, para ser ayudado en el proceso de mantenimiento de la piscina lo más pronto posible">
+	<meta property="og:type" content="website">
+	<!-- favicon - icono que aparece en la pestaña de la página -->
+	<link rel="shortcut icon" href="../multimedia/imagenes/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap">
+	<link rel="stylesheet" href="../css/BienesRaices.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<script src="../js/normalize.json"></script>
+	<title>Contactos | Bob Acuamarino</title>
+</head>
+<body>
+	<!-- Inicio header -->
+	<header class="site-header">
+		<!-- centrar elementos -->
+		<section class="contenedor contenedor-header">
+			<!-- inicio de barra -->
+			<section class="barra">
+				<!-- logo de la empresa -->
+				<a href="../index.html"><img src="../multimedia/imagenes/Logo4.png" alt="Logo de la compañia de Bienes Raices"></a>
+				<!-- menu de movil -->
+				<section class="menu-mobile">
+					<a href="#navegacion"><img src="../multimedia/imagenes/barras.svg" alt="Barras un menú de mobil"></a>
+				</section>
+				<!-- incio de menu principal -->
+				<nav id="navegacion" class="navegacion">
+					<a href="../index.html">Inicio</a>
+					<a href="nosotros.html">Nosotros</a>
+					<a href="anuncio.html">Anuncios</a>
+					<a href="blog.html">Blog</a>
+					<a href="Contactenos.html">Contáctenos</a>
+					<!-- Para cerrar el menu de movil -->
+					<a href="#">
+						<i class="fas fa-times"></i>
+					</a>
+				</nav>
+				<!-- fin de menu principal -->
+			</section>
+			<!-- fin de la barra principal -->
+		</section>
+	</header>
+	<!-- Fin header -->
+	<!-- inicio de contactenos -->
+	<section>
+		<h1 class="fw-300 centrar-texto titulo-contactenos">Contactenos</h1>
+		<article class="fondo-coverdos"></article>
+	</section>
+	<!-- fin de contactenos -->
+	<!-- inicio formulario -->
+	<main class="contenedor">
+		<h2 class="fw-300 centrar-texto">Llenar el formulario de Contactenos</h2>
+		<form action="" method="" class="contenedor-contactenos">
+			<!-- inicio informacion personal -->
+			<fieldset>
+				<legend>Información Personal</legend>
+				<!-- inicio nombre -->
+				<label for="nombre" id="nombre" >Nombre:</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre">
+				<!-- fin nombre -->
+				<!-- inicio correo -->
+				<label for="email" id="email">Correo Electrónico:</label>
+				<input type="email" name="email" id="email" placeholder="Escriba su correo">
+				<!-- fin correo -->
+				<!-- inicio numero -->
+				<label for="tel" id="tel">Teléfono:</label>
+				<input type="tel" name="tel" id="tel" placeholder="Escribe tu teléfono">
+				<!-- fin numero -->
+				<!-- inicio mensaje -->
+				<label for="mensaje" id="mensaje">Mensaje:</label>
+				<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba un mensaje de ser necesario"></textarea>
+				<!-- fin mensaje -->
+			</fieldset>
+			<!-- fin información personal -->
+			<!-- inicio información de la propiedad -->
+			<fieldset>
+				<legend>Información de la propiedad</legend>
+				<!-- inicio compra venta -->
+				<label for="opciones">Remodelación o mantenimiento</label>
+				<select name="opciones" id="opciones">
+					<option value="" disabled selected>--Seleccione--</option>
+					<option value="Compra">Remodelación</option>
+					<option value="Venta">Mantenimiento</option>
+				</select>
+				<!-- fin compra venta -->
+				<!-- inicio presupuesto -->
+				<label for="cantidad" id="presupuesto">Presupuesto:</label>
+				<input type="number" name="cantidad" id="cantidad" min="0">
+				<!-- fin presupuesto -->
+			</fieldset>
+			<!-- fin información de la propiedad -->
+			<!-- inicio contacto -->
+			<fieldset>
+				<legend>Contacto</legend>
+				<p>¿CÓmo desea ser contactado?</p>
+				<!-- inicio opcion telefono -->
+				<section id="radio-contactenos">
+					<!-- inicio telefono -->
+					<label for="telefono" id="telefono">Teléfono</label>
+					<input id="telefono" type="radio" name="contacto" value="telefono">
+					<!-- fin  telefono telefono -->
+					<!-- inicio correo -->
+					<label for="correo" id="correo">Correo</label>
+					<input id="correo" type="radio" name="contacto" value="correo">
+					<!-- fin correo -->
+				</section>
+				<p>Si eligió teléfono, elija la fecha y hora</p>
+				<!-- inicio fecha -->
+				<label for="fecha">Fecha:</label>
+				<input type="date" name="fecha" id="fecha" min="2022-03-03">
+				<!-- fin fecha -->
+				<!-- inicio tiempo -->
+				<label for="tiempo">Tiempo:</label>
+				<input type="time" name="tiempo" id="tiempo" min="08:00" max="18:00">
+				<!-- fin fecha -->
+				<!-- inicio boton de enviar -->
+				<input class="btn botones-2" type="submit" name="button_enviar2" value="Enviar">
+				<!-- fin boton de enviar -->
+			</fieldset>
+			<!-- fin contacto -->
+		</form>
+	</main>
+	<!-- fin de formilario -->
+	<!-- inicio pie de pagina -->
+	<footer class="seccion site-footer">
+		<section class="contenedor contenedor-footer">
+			<!-- inicio del menu del footer -->
+			<nav class="navegacion">
+				<a href="../index.html">Inicio</a>
+				<a href="nosotros.html">Nosotros</a>
+				<a href="anuncio.html">Anuncios</a>
+				<a href="blog.html">Blog</a>
+				<a href="Contactenos.html">Contáctenos</a>
+			</nav>
+			<!-- fin del menu del footer -->
+			<a href="index.html"><img src="../multimedia/imagenes/Logo4.png" alt="logo principal de la compañía de Bienes Raices"></a>
+		</section>
+		<!-- inicio de los derechos de autor -->
+		<section class="contenedor-copy-right">
+			<p class="copy-right">
+				<small>Todos los derechos reservados. 2022&copy;</small>
+			</p>
+		</section>
+		<!-- fin de los derechos de autor -->
+	</footer>
+	<!-- fin del pie de pagina -->	
+</body>
+</html>
