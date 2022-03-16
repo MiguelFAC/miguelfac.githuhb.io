@@ -1,0 +1,620 @@
+/* Eestilos generales */
+body{
+	background-color: rgb(108, 169, 235);
+}
+html{
+    box-sizing: inherit;
+    /* 62.5 =10px */
+    font-size: 62.5%;
+}
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.limpiador{
+	float: none;
+	clear: both;
+}
+@font-face{
+    font-family:"Lato-regular-BienesRaices";
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: "Lato-regular-BienesRaices", sans-serif;
+    font-size: 1.6rem;
+    line-height:2;
+}
+.contenedor{
+    width: 95%;
+    /* width: 120rem=1200px; */
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* colocar las imagenes en forma responsiva o adaptable */
+img{
+    max-width: 100%;
+}
+/* estandarizar los tamaños de los h1*/
+h1{
+    font-size: 3.6rem;
+}
+/* estandarizar los tamaños de los h2*/
+h2{
+    font-size: 3.4rem;
+}
+/* estandarizar los tamaños de los h3*/
+h3{
+    font-size: 3rem;
+}
+/* estandarizar los tamaños de los h4*/
+h4{
+    font-size: 2.6rem;
+}
+/* estandarizar los tamaños de los h5*/
+h5{
+    font-size: 2.6rem;
+}
+a{
+    text-decoration: none;
+}
+/* Estilos utilidades */
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-700{
+    font-weight: 700;
+}
+.centrar-texto{
+    text-align: center;
+}
+.btn{
+    color: white;
+    font-weight: 700;
+    font-size:1.8rem;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    /* margin-top: 3rem; */
+    margin: 3rem 0rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    flex: 0 0 100%;
+}
+.d-block{
+    display: block !important;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.botones-1{
+    background-color: rgb(17, 73, 192);
+    border-radius: 10px;
+}
+.botones-2{
+    color: black;
+    font-weight:bolder;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.contenido-centrado{
+    max-width: 80rem;
+}
+.contenedor-centrado{
+    max-width: 80rem;
+}
+.fondo-cover{
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 10%;
+}
+.fondo-coverdos{
+    background-image: url(../multimedia/imagenes/piscina_fondo3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.sin-bordes{
+    border-radius: 0px;
+}
+/* fin estilos utilidades */
+/* estilos del encabezado */
+/* para colocar la imagen de fondo */
+.site-header.inicio{
+    background-image:url(../multimedia/imagenes/piscina_fondo2.jpg);
+    background-position: center center;
+    background-size: cover;
+    /* adapta la altura dependiendo del dispositivo donde se mire */
+    height: 100vh;
+    min-height: 60rem;
+}
+/* contenedor del encabezado papa de toda la nav y el h1 */
+.contenedor-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+/* para indicar que el contenedor va a estar a la izquierda con más de 768px */
+@media(min-width:768px){
+    .contenedor-header{
+        text-align: left;
+    }
+}
+.barra{
+    padding-top: 3rem;
+}
+/* estilos del h1 o título */
+.contenedor-header h1{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 50%;
+    line-height: 2;
+}
+/* mediaquerrie de menu y barra */
+/* flex solo afecta a los hijos */
+@media(min-width:768px){
+    .menu-mobile{
+        display:none
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    align-items: center;
+    display: block;
+}
+.menu-mobile{
+    width: 5rem;
+    /* align-items: center;
+    text-align: center; */
+    margin: 0 auto;
+}
+.navegacion{
+    display: none;
+}
+.navegacion a:hover{
+    color: green;
+}
+@media(min-width:768px){
+    .navegacion{
+        display: inline-block;
+    }
+    .navegacion i{
+        display: none;
+    }
+    .navegacion a{
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+    }
+}
+.navegacion:target{
+    display: block;
+}
+.navegacion a:last-of-type{
+    margin-right: 0rem ;
+}
+/* fin estilos encabezados */
+/* inicio estilos Sobre Nosotros */
+.contenido-nosotros img{
+    width: 60rem;
+    height: 43rem;
+}
+.titulo-hdos-nosotros{
+    padding-top: 4rem;
+}
+.empleados-nosotros{
+    padding: 1rem 10rem 1rem 10rem;
+}
+@media(min-width:768px){
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.icono{
+    text-align: center;
+}
+.iconos-nosotros{
+    border-radius: 1rem;
+    border: 8px solid rgb(70, 149, 223);
+    background-color: rgb(9, 64, 165);
+    color: white;
+    column-gap: 2rem;
+    padding: 2rem;
+}
+.iconos-nosotros .icono:first-child img{
+    height: 9rem;
+}
+.icono h3{
+    text-transform: uppercase;
+}
+/* fin sobre nosotros */
+/* inicio casas y departamentos */
+@media(min-width:768px){
+    .contenedor-anuncio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .anuncio, .anuncio-galeria{
+        /* factores de crecimiento */
+        /* flex-grow: 0/1; es determinado por el basis*/
+        /* flex-shrink: 0/1; es determinado por el basis */
+        /* flex-basis: calc(33.3% - 1rem); */
+        /* short-hand */
+        /*1er numero flex-grow valor de crecimiento*/
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.anuncio{
+    border-radius: 10px;
+    border: 8px solid rgb(48, 120, 187);
+    background-color: rgb(80, 156, 228);
+    margin-bottom: 2rem;
+}
+.contenido-anuncio{
+    padding: 2rem;
+}
+.anuncio img{
+    width: 100%;
+    border-radius:2% 2% 30% 5%;
+}
+.anuncio-galeria{
+    border-radius: 10px;
+    border: 8px solid rgb(48, 120, 187);
+    background-color: rgb(80, 156, 228);
+    margin-bottom: 2rem;
+}
+.anuncio-galeria img{
+    height: 100%;
+    width: 100%;
+}
+.precio{
+    color: rgb(90, 2, 90);
+}
+.icono-caracteristicas{
+    list-style: none;
+    padding: 0px;
+    column-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.icono-caracteristicas li{
+    display: flex;
+}
+.icono-caracteristicas img{
+    margin-right: 2rem;
+}
+/* .ver-todas, .ver-todas a{
+    text-align: center;
+    width: 100%;
+} */
+.ver-todas .btn{
+    display: block;
+}
+/* @media(min-width:768px){
+    .ver-todas .btn{
+        display: inline-block !important;
+    }
+    .ver-todas{
+        text-align: right;
+    }
+} */
+/* fin casas y departamentos */
+/* inicio encuenctra la casa de tus sueños */
+.imagen-casa-sueños{
+    background-image: url(../multimedia/imagenes/encuentra3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-casa-sueños{
+    color: wheat;
+    flex: 0 0 95%;
+}
+.contenido-casa-sueños p{
+    font-size: 1.8rem;
+}
+/* fin Estilos encuentra la casa de tus sueños */
+/* inicio Estilos blog y testimoniales */
+@media(min-width:768px){
+    .seccion-inferior{
+        display: flex;
+        /* flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; */
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+    .blog{
+        flex-basis: 100%;
+        
+    }
+    .testimoniales{
+        flex-basis: 40%;
+    }
+    .entrada-blog{
+        display: flex;
+        justify-content: space-between;
+    }
+    .entrada-blog .imagen-entrada{
+        flex-basis: 40%;
+    }
+    .entrada-blog .texto-entrada{
+        flex-basis: calc(60% - 3rem);
+    }
+}
+.imagen-blog-uno{
+    margin-left: 10%;
+}
+.entrada-blog{
+    margin: 1rem;
+}
+.texto-entrada h5{
+    margin: 0px;
+}
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+}
+.texto-entrada h5::after{
+    content:"";
+    display: block;
+    width: 20rem;
+    height: 1rem;
+    background-color: rgb(180, 8, 8);
+    margin-top: 0.5rem;
+}
+.texto-entrada em{
+    color: rgb(128, 2, 2);
+    font-weight: bold;
+}
+/* fin Estilos blog y testimoniales */
+/* inicio Estilos de testimoniales */
+.testimonial{
+    background-color: rgb(204, 204, 7);
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: black;
+    border-radius: 1rem;
+}
+.testimonial p{
+    text-align: right;
+}
+.testimonial blockquote{
+    position: relative;
+    padding: 4rem;
+    font-weight: 300;
+}
+.testimonial blockquote::before{
+    content: "";
+    background-image: url(../multimedia/imagenes/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -1.6rem;
+}
+/* fin estilos testimoniales */
+/* inicio seccion de audio */
+.audio{
+    display: none;
+}
+/* fin seccion de audio */
+/* inicio estilos de pie de página */
+.site-footer{
+    background-color:rgb(0, 38, 165);
+    /* margin-bottom: -3rem; */
+    margin: 0px;
+    margin-top: 5rem;
+    padding-top: 1rem;
+}
+.contenedor-copy-right{
+    background-color:rgb(0, 2, 107);
+}
+.copy-right{
+    color: wheat;
+    text-align: center;
+    padding: 2rem 0rem;
+    /* padding-bottom: 2rem; */
+}
+@media(min-width:768px){
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* fin estilos de pie de página */
+/* inicio la pagina nosotros */
+/* inicio encabezado */
+.site-header{
+    background-color: rgb(0, 38, 165);
+    padding: 1rem 0px 3rem;
+    text-align: center;
+}
+/* fin encabezado */
+/* inicio cuerpo */
+@media(min-width:768px){
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+    }
+}
+.texto-nosotros{
+    font-weight: 300;
+    font-size: 1.9rem;
+    text-align: justify;
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+/* fin cuerpo */
+/* fin pagina nosotros */
+/* incio pagina contactenos */
+label{
+    display: block;
+    font-weight: 900;
+}
+legend{
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+input:not([type="submit"]),  textarea, select{
+    display: block;
+    background-color: rgba(214, 185, 19, 0.747);
+    color: black;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+}
+#radio-contactenos input[type="radio"]{
+    width: auto;
+    margin: 0rem;
+}
+@media(min-width:768px){
+    .contenedor-contactenos{
+        width: 60% !important;
+    }
+}
+.contenedor-contactenos{
+    width: 90%;
+    margin: 0 auto;
+}
+form p{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+/* fin pagina de contactenos */
+/* inicio pagina propiedad uno */
+/* revisar */
+.resumen-propiedad{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+/* fin pagina propiedad uno */
+/* inicio entrada de blog uno */
+em{
+    color: rgb(128, 2, 2);
+}
+/* fin entrada de blog uno */
+/* inicio galeria carrusel */
+.slide {
+    position: relative;
+    /* box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64); */
+    margin-top: 26px;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    /* height: calc( 300px + 3em); */
+}
+div .slide-open input[type="radio"],div
+input:not([type="submit"]){
+    display: none;
+}
+.slide-open:checked+.slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.slide-control {
+    background: rgba(0, 17, 255, 0.575);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked~.control-1,
+#slide-2:checked~.control-2,
+#slide-3:checked~.control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+color: #428bca;
+}
